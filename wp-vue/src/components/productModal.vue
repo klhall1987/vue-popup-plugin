@@ -3,7 +3,7 @@
         <modal 
             name="productModal"
             classes="vpup-modal"
-            height="70%"
+            height="98%"
             width="50%"
         >
             <slot name="header"></slot>
@@ -94,7 +94,7 @@
                 </div>
                 <!-- End Second Product -->
                 <div class="vpup-vet-total">
-                    <p>{{ totalQuantity }}</p>
+                    <p>Total Veterinary Memberships: {{ totalQuantity }}</p>
                 </div>
             </div>
 
@@ -190,6 +190,7 @@
 
             <div class="vpup-account-footer">
                 <FormulateInput
+                @click="redirectToCart"
                 type="button"
                 label="Checkout"
                 />
@@ -231,9 +232,9 @@ export default {
         },
     },
     methods: {
-        cartURL() {
-            let url = document.location.origin + '?/add-to-cart=147&quantity=' + this.vetCertQuantity + '&add-to-cart=149&quantity=' + this.vetCertAvianQuantity + '&add-to-cart=150&quantity=' + this.groomerQuantity + '&add-to-cart=151&quantity=' + this.trainerQuantity;
-            return cartURL;
+        redirectToCart() {
+            let url = this.atts.url + '?post_type=product&add-to-cart=147&quantity=' + this.vetCertQuantity + '&add-to-cart=149&quantity=' + this.vetCertAvianQuantity + '&add-to-cart=150&quantity=' + this.groomerQuantity + '&add-to-cart=151&quantity=' + this.trainerQuantity;
+            window.location.href = url; 
         },
         reduceVetCertQuantity() {
             if( Math.sign( this.vetCertQuantity ) ) {

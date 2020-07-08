@@ -43,8 +43,8 @@ class vue_popup
 
         $vue_atts = esc_attr( json_encode( [
             'siteURL' => VPUP_URL,
+            'url'     => get_site_url()
             ] ) );
-        
 
         return "<div id='vpup-app' data-vpup-atts='{$vue_atts}'></div>";
     }

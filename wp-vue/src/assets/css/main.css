@@ -113,8 +113,9 @@
     flex-direction: column;
     background-color: #EFEFEF;
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 1.5em;
+    margin-bottom: 1em;
 }
 
 .vpup-product-title {
@@ -138,6 +139,10 @@
     justify-content: flex-end;
     align-items: center;
     font-size: 14px;
+}
+
+.vpup-product p { 
+    margin: 0;
 }
 
 .vpup-product p {
@@ -175,3 +180,8 @@
     margin-left: .5em;
 }
 
+.vpup-vet-total {
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: .5em;
+}
