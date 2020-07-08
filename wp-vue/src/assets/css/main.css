@@ -108,7 +108,7 @@
 
 /* Product Modal */
 
-.vpup-vet-cert {
+.vpup-product-container {
     display: flex;
     flex-direction: column;
     background-color: #EFEFEF;
@@ -117,17 +117,17 @@
     padding: 1.5em;
 }
 
-.vpup-vet-title {
+.vpup-product-title {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.vpup-vet-title p { 
+.vpup-product-title p { 
     padding-top: 2px;
 }
 
-.vpup-vet-title i { 
+.vpup-product-title i { 
     font-size: 1.5em;
     margin-right: .75em;
 }

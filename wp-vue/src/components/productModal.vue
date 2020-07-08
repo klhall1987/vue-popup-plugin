@@ -13,8 +13,8 @@
             </div>
 
             <!-- Vet Cert Section -->
-            <div class="vpup-vet-cert">
-                <div class="vpup-vet-title">
+            <div class="vpup-product-container">
+                <div class="vpup-product-title">
                     <i class="fa fa-gg-circle" aria-hidden="true"></i>
                     <p>Veterinary Professional Membership(includes all Veterinary Program</p>
                 </div>
@@ -56,50 +56,137 @@
                 </div>
             <!-- End First Product -->
 
-                <!-- Start First Product -->
-                    <div class="vpup-product">
-                        <p>Team members start with Veterinary Certification Program - Avian</p>
-                        <span class="vpup-minus-button">
-                            <FormulateInput
-                                type="button"
-                                min="0"
-                                @click="reduceVetCertAvianQuantity"
-                                >
-                                <i class="fa fa-minus" aria-hidden="true"></i>
-                            </FormulateInput>
-                        </span>
-                    
-                        <span class="vpup-number-field">
-                            <FormulateInput
-                                type="text"
-                                name="product 1"
-                                inputmode="numeric"
-                                :wrapper-class="[ 'productInput' ]"
-                                placeholder="0"
-                                min="0"
-                                max="100"
-                                v-model="vetCertAvianQuantity"
-                                >
-                            </FormulateInput>
-                        </span>
+                <!-- Start Second Product -->
+                <div class="vpup-product">
+                    <p>Team members start with Veterinary Certification Program - Avian</p>
+                    <span class="vpup-minus-button">
+                        <FormulateInput
+                            type="button"
+                            min="0"
+                            @click="reduceVetCertAvianQuantity"
+                            >
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </FormulateInput>
+                    </span>
+                
+                    <span class="vpup-number-field">
+                        <FormulateInput
+                            type="text"
+                            name="product 1"
+                            inputmode="numeric"
+                            :wrapper-class="[ 'productInput' ]"
+                            placeholder="0"
+                            min="0"
+                            max="100"
+                            v-model="vetCertAvianQuantity"
+                            >
+                        </FormulateInput>
+                    </span>
 
-                        <span class="vpup-plus-button">
-                            <FormulateInput
-                                type="button"
-                                @click="vetCertAvianQuantity++"
-                                >
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </FormulateInput>
-                        </span>
-                    </div>
-                <!-- End First Product -->
+                    <span class="vpup-plus-button">
+                        <FormulateInput
+                            type="button"
+                            @click="vetCertAvianQuantity++"
+                            >
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </FormulateInput>
+                    </span>
+                </div>
+                <!-- End Second Product -->
                 <div class="vpup-vet-total">
                     <p>{{ totalQuantity }}</p>
                 </div>
             </div>
 
-   
+            <!-- Groomer Cert Section -->
+            <div class="vpup-product-container">
+                <div class="vpup-product-title">
+                    <i class="fas fa-paw"></i>
+                    <p>Groomer Pet Professional Membership</p>
+                </div>
+                <!-- Start First Product -->
+                <div class="vpup-product">
+                    <p>Includes Groomer Cerification</p>
+                    <span class="vpup-minus-button">
+                        <FormulateInput
+                            type="button"
+                            min="0"
+                            @click="reduceGroomerQuantity"
+                            >
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </FormulateInput>
+                    </span>
+                    
+                    <span class="vpup-number-field">
+                        <FormulateInput
+                            type="text"
+                            name="product 3"
+                            inputmode="numeric"
+                            :wrapper-class="[ 'productInput' ]"
+                            placeholder="0"
+                            min="0"
+                            max="100"
+                            v-model="groomerQuantity"
+                            >
+                        </FormulateInput>
+                    </span>
 
+                    <span class="vpup-plus-button">
+                        <FormulateInput
+                            type="button"
+                            @click="groomerQuantity++"
+                            >
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </FormulateInput>
+                    </span>
+                </div>
+            <!-- End Groomer Section -->
+            </div>
+
+            
+            <!-- Trainer Cert Section -->
+            <div class="vpup-product-container">
+                <div class="vpup-product-title">
+                    <i class="fas fa-paw"></i>
+                    <p>Animal Trainer Membership</p>
+                </div>
+                <!-- Start First Product -->
+                <div class="vpup-product">
+                    <p>Includes Animal Trainer Program</p>
+                    <span class="vpup-minus-button">
+                        <FormulateInput
+                            type="button"
+                            min="0"
+                            @click="reduceTrainerQuantity"
+                            >
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </FormulateInput>
+                    </span>
+                    
+                    <span class="vpup-number-field">
+                        <FormulateInput
+                            type="text"
+                            name="product 4"
+                            inputmode="numeric"
+                            placeholder="0"
+                            min="0"
+                            max="100"
+                            v-model="trainerQuantity"
+                            >
+                        </FormulateInput>
+                    </span>
+
+                    <span class="vpup-plus-button">
+                        <FormulateInput
+                            type="button"
+                            @click="trainerQuantity++"
+                            >
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </FormulateInput>
+                    </span>
+                </div>
+            <!-- End Trainer Section -->
+            </div>
 
             <div class="vpup-account-footer">
                 <FormulateInput
@@ -115,18 +202,20 @@
 
 export default {
     name: 'productModal',
-    props: [ 'openProductModal', 'shouldClose' ],
+    props: [ 'atts', 'openProductModal', 'shouldClose' ],
     data () {
         return {
             close: false,
             vetCertQuantity: 0,
             vetCertAvianQuantity: 0,
+            groomerQuantity: 0, 
+            trainerQuantity: 0
         }
     },
     computed: {
         totalQuantity() {
             return this.vetCertQuantity + this.vetCertAvianQuantity;
-        }
+        }, 
     },
     watch: {
         openProductModal: function( value ) {
@@ -142,6 +231,10 @@ export default {
         },
     },
     methods: {
+        cartURL() {
+            let url = document.location.origin + '?/add-to-cart=147&quantity=' + this.vetCertQuantity + '&add-to-cart=149&quantity=' + this.vetCertAvianQuantity + '&add-to-cart=150&quantity=' + this.groomerQuantity + '&add-to-cart=151&quantity=' + this.trainerQuantity;
+            return cartURL;
+        },
         reduceVetCertQuantity() {
             if( Math.sign( this.vetCertQuantity ) ) {
                 this.vetCertQuantity--
@@ -150,6 +243,16 @@ export default {
         reduceVetCertAvianQuantity() {
             if( Math.sign( this.vetCertAvianQuantity ) ) {
                 this.vetCertAvianQuantity--
+            }
+        },
+        reduceGroomerQuantity() {
+            if( Math.sign( this.groomerQuantity ) ) {
+                this.groomerQuantity--
+            }
+        },
+        reduceTrainerQuantity() {
+            if( Math.sign( this.trainerQuantity ) ) {
+                this.trainerQuantity--
             }
         },
         show () {
