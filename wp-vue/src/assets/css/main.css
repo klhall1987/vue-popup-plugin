@@ -1,0 +1,177 @@
+.vpup-modal { 
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 1.5em;
+    border-radius: 10px !important;
+    color: #334250;
+}
+
+.vpup-modal a{
+    color: #334250;
+}
+
+.vpup-modal h3 {
+    margin: 1rem 0 !important;
+}
+
+.vpup-modal h4 {
+    margin: 1rem 0 !important;
+}
+
+.vpup-modal button {
+    border-radius: 50px;
+    background-color: #334250;
+    font-size: 1em;
+    padding: 1.25em 1.75em !important;
+    text-transform: none;
+}
+
+
+.vpup-header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vpup-header p {
+    font-size: .75em;
+}
+
+.vpup-header img{ 
+    max-width: 5em;
+}
+
+.vpup-login{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vpup-login p {
+    font-size: .75em;
+    margin-top: .75em;
+}
+
+.vpup-login a {
+    color: #334250 !important;
+}
+
+.vpup-login i{ 
+    font-size: 1.25em;
+    margin-left: .5em;
+    color: #334250;
+}
+
+.vpup-content {
+    margin-top: .5em;
+}
+
+.vpup-content p{
+    max-width: 60%;
+    margin-top: .5em;
+}
+
+.vpup-button-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.vpup-account-modal {
+    padding: 1em;
+}
+
+.vpup-account-column {
+    max-width: 45%;
+}
+
+.vpup-account-modal-title p{
+    max-width: 90%;
+}
+
+.vpup-account-modal-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 90%;
+}
+
+.vpup-account-footer {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Product Modal */
+
+.vpup-vet-cert {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 1.5em;
+}
+
+.vpup-vet-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.vpup-vet-title p { 
+    padding-top: 2px;
+}
+
+.vpup-vet-title i { 
+    font-size: 1.5em;
+    margin-right: .75em;
+}
+
+.vpup-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.vpup-product p {
+    padding-top: .5em;
+}
+
+
+.vpup-product input { 
+    border-radius: .25em;
+    padding: .5em .75em; 
+}
+
+.vpup-number-field {
+    width: 5%;
+}
+
+.vpup-minus-button button{
+    background-color: #FEFEFE;
+    padding: .25em .5em !important;
+    margin: 0 .5em 0 75px;
+}
+
+.fa-minus { 
+    color: #334250;
+    font-size: 1em !important;
+}
+
+.fa-plus {
+    font-size: 1em !important;
+
+}
+
+.vpup-plus-button button {
+    padding: .25em .5em !important;
+    margin-left: .5em;
+}
+
