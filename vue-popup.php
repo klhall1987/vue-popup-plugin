@@ -95,25 +95,25 @@ class vue_popup
         // TODO: Refactor this to be dynamic. 
         // Check our Product Quantity then add a cart item, if we have any items. 
         if( $_GET[ 'vetCertQuantity' ] > 0 ) {
-            WC()->cart->add_to_cart( 19, $_GET[ 'vetCertQuantity'] );
+            WC()->cart->add_to_cart( 147, $_GET[ 'vetCertQuantity'] );
             $should_redirect = true;
         }
 
         // Check our Product Quantity then add a cart item, if we have any items. 
         if( $_GET[ 'vetCertAvianQuantity' ] > 0 ) {
-            WC()->cart->add_to_cart( 22, $_GET[ 'vetCertAvianQuantity'] );
+            WC()->cart->add_to_cart( 149, $_GET[ 'vetCertAvianQuantity'] );
             $should_redirect = true;
         }
 
         // Check our Product Quantity then add a cart item, if we have any items. 
         if( $_GET[ 'groomerQuantity' ] > 0 ) {
-            WC()->cart->add_to_cart( 20, $_GET[ 'groomerQuantity'] );
+            WC()->cart->add_to_cart( 150, $_GET[ 'groomerQuantity'] );
             $should_redirect = true;
         }
 
         // Check our Product Quantity then add a cart item, if we have any items. 
         if( $_GET[ 'trainerQuantity' ] > 0 ) {
-            WC()->cart->add_to_cart( 21, $_GET[ 'trainerQuantity'] );
+            WC()->cart->add_to_cart( 151, $_GET[ 'trainerQuantity'] );
             $should_redirect = true;
         }
 
