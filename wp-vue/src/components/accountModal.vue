@@ -3,8 +3,8 @@
         <modal 
             name="accountModal"
             classes="vpup-modal"
-            height="73%"
-            width="45%"
+            height="75%"
+            width="40%"
         >
             <slot name="header"></slot>
             <div class="vpup-account-modal-title">

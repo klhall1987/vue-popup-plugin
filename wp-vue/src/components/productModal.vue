@@ -233,7 +233,7 @@ export default {
     },
     methods: {
         redirectToCart() {
-            let url = this.atts.url + '?post_type=product&add-to-cart=147&quantity=' + this.vetCertQuantity + '&add-to-cart=149&quantity=' + this.vetCertAvianQuantity + '&add-to-cart=150&quantity=' + this.groomerQuantity + '&add-to-cart=151&quantity=' + this.trainerQuantity;
+            let url = this.atts.url + '?vetCertQuantity=' + this.vetCertQuantity + '&vetCertAvianQuantity=' + this.vetCertAvianQuantity + '&groomerQuantity=' + this.groomerQuantity + '&trainerQuantity=' + this.trainerQuantity;
             window.location.href = url; 
         },
         reduceVetCertQuantity() {
