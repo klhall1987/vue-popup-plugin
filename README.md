@@ -2,9 +2,6 @@
 
 ## Project setup
 ```
-cd wp-vue
-```
-```
 npm install
 ```
 

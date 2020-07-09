@@ -9,7 +9,7 @@ Vue.use(VueFormulate)
 Vue.use(VueCarousel)
 
 Vue.config.productionTip = false
-
+// Mount our instance
 new Vue({
   render: h => h(vpupApp),
 }).$mount('#vpup-app')

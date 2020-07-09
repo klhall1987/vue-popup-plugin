@@ -1,4 +1,7 @@
 # wp-vue
+```
+cd wp-vue
+```
 
 ## Project setup
 ```

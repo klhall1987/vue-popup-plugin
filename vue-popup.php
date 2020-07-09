@@ -71,7 +71,7 @@ class vue_popup
         // Redirect to cart if needed. 
         $this->vpup_redirect_to_cart( $should_redirect );
 
-        // Pass data to vue.
+        // Localize data to vue.
         $vue_atts = esc_attr( json_encode( [
             'siteURL' => VPUP_URL,
             'url'     => get_site_url()
