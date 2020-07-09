@@ -132,7 +132,7 @@ class vue_popup
     {
         //  Check our quantities and redirect if any products are set. 
         if( $should_redirect ) {
-            $cart_redirect_url =  get_site_url() . '/?page_id=7';
+            $cart_redirect_url =  get_site_url() . '/cart';
             echo "<script>window.location.replace('" . $cart_redirect_url . "')</script>";
         }
     }
